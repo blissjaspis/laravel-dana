@@ -1,0 +1,42 @@
+{
+    "name": "blissjaspis/laravel-dana",
+    "description": "Dana SDK for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bliss Jaspis",
+            "email": "bliss@jaspis.me"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^11.7",
+        "phpunit/phpunit": "^11.1",
+        "orchestra/testbench": "^9.0",
+        "illuminate/http": "^11.7"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.1",
+        "orchestra/testbench": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BlissJaspis\\Dana\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BlissJaspis\\Dana\\DanaServiceProvider"
+            ],
+            "aliases": {
+                "Dana": "BlissJaspis\\Dana\\Dana"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
